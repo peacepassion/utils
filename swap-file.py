@@ -17,9 +17,9 @@ lg = len(sys.argv)
 for i in range(1, lg, 1):
     if sys.argv[i] == '--ip':
         ip = sys.argv[i + 1]
-    if sys.argv[i] == '-f':
+    if sys.argv[i] == '--wf':
         j = i + 1
-        while j <= lg and sys.argv[j][0] != '-':
+        while j < lg and sys.argv[j][0] != '-':
             wfs.append(sys.argv[j])
             j += 1
     if sys.argv[i] == '--lp':
