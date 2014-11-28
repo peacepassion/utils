@@ -4,6 +4,7 @@ from __future__ import print_function
 import sys
 import os
 import fileinput
+import termcolor
 
 # this is a good method using os command
 # content = sys.stdin.read(-1)
@@ -19,7 +20,7 @@ import fileinput
 
 
 for line in fileinput.input():
-    print(str(str(fileinput.lineno()) + ':').rjust(3), line, sep=' ', end='')
+    print(termcolor.colored(str(str(fileinput.lineno()) + ':').rjust(3), 'green'), line, sep=' ', end='')
 
 
 
