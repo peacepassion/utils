@@ -41,7 +41,7 @@ if opt.debug is True:
     print 'target name is: ' + opt.t
 
 full_name = os.path.abspath(args[0])
-cmd = 'alias ' + opt.t + '=\'' + 'python ' + full_name + '\''
+cmd = 'alias ' + opt.t + '=\'' + full_name + '\''
 if opt.debug is True:
     print 'alias cmd: ' + cmd
 
