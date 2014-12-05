@@ -39,3 +39,10 @@ Usage: python [-c | --clear] [-p | --path] [-d | --debug] file...
 -p: a path used for swapping  
 -d: switch on debug mode  
 file: target files  
+
+#### p4-build.py
+######Used in Linux, automate perforce login, perforce checkout code, and execute build script
+Usage: python [-d | --debug] [-b | --build-script build-script] build-arg
+-d: switch on debug mode
+-b: set build script
+build-arg: argument for build script
