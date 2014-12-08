@@ -3,7 +3,7 @@
 import sys
 import os
 
-ip = '10.64.41.139'
+ip = '10.64.41.130'
 lp = '/swap'
 wp = '.'
 lf = '*'
