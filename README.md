@@ -24,7 +24,7 @@ Can be used as a pipe command, e. g. echo 'hello python' | sl
 
 #### swap-file.py
 ######A convenient method for swapping files between linux and cygwin by scp command.  
-Usage: python [--ip ipaddress] [--wf windows-files] [--lp linux-path] [-s | -r] [-d]  
+Usage: python swap-file.py [--ip ipaddress] [--wf windows-files] [--lp linux-path] [-s | -r] [-d]
 --ip: set ip  
 --wf: if -s is set, the windows-files will be send  
 --lp: set the linux path within which the files will be sent to or received from  
@@ -34,7 +34,7 @@ Usage: python [--ip ipaddress] [--wf windows-files] [--lp linux-path] [-s | -r] 
 
 #### mv-swap.py
 ######Used in Linux, move files to a specified dir for Win get files by scp command by Cygwin.  
-Usage: python [-c | --clear] [-p | --path] [-d | --debug] file...  
+Usage: python mv-swap.py [-c | --clear] [-p | --path] [-d | --debug] file...
 -c: clear the path set by -p  
 -p: a path used for swapping  
 -d: switch on debug mode  
@@ -46,3 +46,11 @@ Usage: python [-d | --debug] [-b | --build-script build-script] build-arg
 -d: switch on debug mode
 -b: set build script
 build-arg: argument for build script
+
+#### create-singleton.py
+######Used in Linux, creating necessary singleton sentences for an existing Java class, mainly supporting Android development.
+Usage: python create-singleton.py [-d | --debug] [-c | --no-context] [-s | --no-synchronized] target-file...  
+-d: switch on debug mode  
+-c: do not put Context as constructor parameter  
+-s: do not need sync singleton method  
+target-file: Java files need to be handled  
