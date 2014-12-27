@@ -54,3 +54,11 @@ Usage: python create-singleton.py [-d | --debug] [-c | --no-context] [-s | --no-
 -c: do not put Context as constructor parameter  
 -s: do not need sync singleton method  
 target-file: Java files need to be handled  
+
+#### git-pipe.py
+######Used in Linux, read pipe input as git command input
+Usage: python git-pipe.py [-d | --debug] [-s | --space] git-command...  
+-d: switch on debug mode  
+-s: there is space in pipe input  
+git-command: e.g. git add  
+e.g. git status | grep modified | cut -b 16- | python git-pipe.py -d 'git add'  
